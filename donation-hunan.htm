@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <!-- saved from url=(0060)https://www.w3schools.com/howto/tryhow_css_fullpage_demo.htm -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<html><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body, html {
   height: 100%;
   margin: 0;
-  font: 400 15px/1.8 "Lato", sans-serif;
-  color: #777;
 }
 
 .bgimg-1{
@@ -31,10 +37,20 @@ body, html {
   margin-left: 10%;
   margin-right: 10%;
 
-
-
-
 }
+
+.c {
+  position: relative;
+  top:60px;
+        font-size: 20px;
+        color: white;
+        margin:0 -15px;
+        right: 0;
+        left: 0;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+      }
 
 .caption {
   position: absolute;
@@ -42,17 +58,100 @@ body, html {
   top: 50%;
   width: 100%;
   text-align: center;
-  color: #000;
+  color:white;
 }
 
 .caption span.border {
-  background-color: #111;
-  color: #fff;
+  color:white;
   padding: 18px;
   font-size: 25px;
   letter-spacing: 10px;
 }
 
+.bottom2{
+  position: absolute;
+  bottom:8px;
+  width: 90%;
+  left:5%;
+  right:5%;
+  height: 70px;
+}
+
+.bottom1{
+  position: absolute;
+  bottom:100px;
+  margin: auto;
+
+  width: 30%;
+ 
+  left:35%;
+  right:40%;
+}
+
+.pph {
+  position: relative;
+  top:80px;
+
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  margin-left: 45px;
+  margin-right: 20px;
+}
+
+a { color:white; } 
+
+.center {
+        text-align: center;
+        vertical-align: middle;
+        margin: auto;
+        text-align: center;
+
+        height: 20px;
+        line-height: 20px;
+      }
+
+
+      .pphnum {
+        font-size: 30px;
+        color: white;
+        padding:0 15px;
+      }
+
+
+.box-text {
+        display: flex;
+        background-color: clear;
+        width: 40px;
+        height: 40px;
+        border: 1px solid white;
+        text-align: center;
+        vertical-align: middle;
+       
+        justify-content: center;
+        align-items: center;
+        padding:5px; 
+      }
+
+
+      #scrollBox {
+        width: 400px;
+        height: 40px;
+        line-height: 20px;
+        overflow: hidden;
+        margin: 10px;
+      }
+      #scrollBox2 {
+
+        position: relative;
+  top:80px;
+        width: 100%;
+        height: 80px;
+        line-height: 40px;
+        overflow: hidden;
+
+     
+    
+      }
 
 </style>
 </head>
@@ -60,13 +159,101 @@ body, html {
 <div class="bgimg-1">
 
 
+<img src="first-title.png" class="titleimage-1" alt="">
+  
+  
+<div class="c">
+  <a>你捕好货我出钱 目前参与人数</a>
+</div>
 
-    <img src="first-title.png" class="titleimage-1" alt="">
-  
-  
+
+
+
+ 
+  <div class="container pph">
+    <div class="row ">
+      <div class="col">
+        <div class="box-text">
+          <a style="color:white;" class="center pphnum">0</a>
+        </div>
+      </div>
+
+
+      <div class="col">
+        <div class="box-text">
+          <a style="color:white;" class="center pphnum">0</a>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="box-text">
+          <a style="color:white;" class="center pphnum">0</a>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="box-text">
+          <a style="color:white;"class="center pphnum">0</a>
+        </div>
+      </div>
+      
+    </div>
+
+
+  </div>
+
+
+
+  <div id="scrollBox2">
+    <ul>
+      <li>
+        <a style="color:white;">捕手 566 昵称：安心 微信号码:65820677383</a>
+      </li>
+    </ul>
+  </div>
+
+
+
+
+  <img src="bottom2.png" class="bottom2" alt="">
+
+  <img src="bottom1.png" class="bottom1" alt="">
 
 </div>
 
 
+
+<script type="text/javascript">
+  function Dron_ScrollBox(uid) {
+    this.scrollBox = document.getElementById(uid);
+    this.scrollBoxHeight = this.scrollBox.clientHeight;
+    this.scrollBoxInner = this.scrollBox.innerHTML;
+    this.scrollCol = this.scrolln = 0;
+    this.setScroll = function() {
+      this.scrollBox.scrollTop = this.scrollCol + this.scrolln;
+      if (this.scrolln == this.scrollBoxHeight) return this.addScroll();
+      else this.scrolln++;
+      var o = this;
+      function m() {
+        o.setScroll();
+      }
+      setTimeout(m, 40);
+    };
+    this.addScroll = function() {
+      this.scrollBox.innerHTML += "<br />" + this.scrollBoxInner;
+      this.scrollCol = this.scrollBox.scrollTop;
+      this.scrolln = 0;
+      var o = this;
+      function m() {
+        o.setScroll();
+      }
+      setTimeout(m, 2000);
+    };
+    this.init = this.addScroll;
+  }
+  //类的调用方法，可多个
+
+  new Dron_ScrollBox("scrollBox2").init();
+</script>
 
 </body></html>
